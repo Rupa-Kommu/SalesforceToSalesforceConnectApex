@@ -13,9 +13,8 @@
                     <lightning-button label="Sync Selected Contacts" onclick={handleSync}></lightning-button>
                 </div>
             </div>
-
         </div>
-        <!--Datatable to display the leads-->>
+        <!--Datatable to display the leads-->
             <template if:true={leads}>
                 <lightning-datatable 
                     data={recordsToDisplay} 
@@ -62,6 +61,5 @@
             <template if:true={error}>
                 <p class="slds-text-color_error">{error}</p>
             </template>
-        </div>
     </lightning-card>
 </template>
